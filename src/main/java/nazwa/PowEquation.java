@@ -1,3 +1,5 @@
+package nazwa;
+
 /**
  * @author Jacek Herrmann
  * Date: 2019-03-02

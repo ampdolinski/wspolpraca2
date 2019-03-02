@@ -1,4 +1,6 @@
-public class SubtractEquation implements ICAlculable {
+package nazwa;
+
+public class SubtractEquation implements ICalculable {
     private double x;
     private double y;
 

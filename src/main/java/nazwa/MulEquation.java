@@ -1,17 +1,19 @@
+package nazwa;
+
 /**
  * @author Jacek Herrmann
  * Date: 2019-03-02
  */
-public class DivEquation implements ICAlculable {
+public class MulEquation implements ICalculable {
     private double num1;
     private double num2;
 
-    public DivEquation(double num1, double num2) {
+    public MulEquation(double num1, double num2) {
         this.num1 = num1;
         this.num2 = num2;
     }
 
     public double calculate(){
-        return num1 / num2;
+        return num1 * num2;
     }
 }

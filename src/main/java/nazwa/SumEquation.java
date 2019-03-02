@@ -1,4 +1,6 @@
-public class SumEquation implements ICAlculable {
+package nazwa;
+
+public class SumEquation implements ICalculable {
     private double x;
     private double y;
 

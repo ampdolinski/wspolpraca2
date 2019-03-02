@@ -1,3 +1,5 @@
+package nazwa;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,7 +9,6 @@ public class Main {
 
         while (loop) {
             try {
-
                 System.out.println("Podaj, co chcesz zrobić (add / sub / div / mul / quit):");
                 switch (scanner.nextLine().toLowerCase()) {
                     case "add":
