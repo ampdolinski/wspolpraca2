@@ -9,7 +9,7 @@ public class Main {
 
         while (loop) {
             try {
-                System.out.println("Podaj, co chcesz zrobić (add / sub / div / mul / quit):");
+                System.out.println("Podaj, co chcesz zrobić (add / sub / div / mul / pow / quit):");
                 switch (scanner.nextLine().toLowerCase()) {
                     case "add":
                         SumEquation suma = new SumEquation(getNumX(), getNumY());
@@ -27,6 +27,10 @@ public class Main {
                         MulEquation mnozenie = new MulEquation(getNumX(), getNumY());
                         System.out.println(mnozenie.calculate());
                         break;
+                    case "pow":
+                        PowEquation potega = new PowEquation(getNumX(), getNumY());
+                        System.out.println(potega.getPow());
+                        break;
                     case "quit":
                         loop = false;
                         break;
@@ -34,8 +38,8 @@ public class Main {
                         System.out.println("Nie ma takiej operacji, spóbuj jeszcze raz!");
                         break;
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Niepoprawnie wprowadzona wartość spróbuj jeszcze raz!");
+            } catch (Exception e) {
+                System.out.println("Niepoprawnie wprowadzona wartość spróbuj jeszcze raz! " + e.getMessage());
             }
         }
         System.out.println("KONIEC");
