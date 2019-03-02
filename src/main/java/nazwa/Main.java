@@ -9,7 +9,7 @@ public class Main {
 
         while (loop) {
             try {
-                System.out.println("Podaj, co chcesz zrobić (add / sub / div / mul / quit):");
+                System.out.println("Podaj, co chcesz zrobić (add / sub / div / mul / pow / quit):");
                 switch (scanner.nextLine().toLowerCase()) {
                     case "add":
                         SumEquation suma = new SumEquation(getNumX(), getNumY());
@@ -26,6 +26,10 @@ public class Main {
                     case "mul":
                         MulEquation mnozenie = new MulEquation(getNumX(), getNumY());
                         System.out.println(mnozenie.calculate());
+                        break;
+                    case "pow":
+                        PowEquation potega = new PowEquation(getNumX(), getNumY());
+                        System.out.println(potega.getPow());
                         break;
                     case "quit":
                         loop = false;
